@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Exploore | Туристична агенція пригод</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="container">
+        <div class="contact-info">
+          <i class="fas fa-phone-alt"></i> +123 4567 8900 &nbsp;|&nbsp;
+          <i class="fas fa-envelope"></i> free@psdfreebies.com
+        </div>
+        <div class="auth-links">
+          <i class="fas fa-user"></i> <a href="#">Увійти</a>
+          <i class="fas fa-user-plus"></i> <a href="#">Зареєструватися</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo"><h2>Exploore</h2></div>
+        <div class="burger" id="burgerMenu">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link">ГОЛОВНА</a></li>
+          <li><a href="#destinations" class="nav-link">НАПРЯМКИ</a></li>
+          <li><a href="#reviews" class="nav-link">ВІДГУКИ</a></li>
+          <li><a href="#about" class="nav-link">ПРО НАС</a></li>
+          <li><a href="#contact" class="nav-link">КОНТАКТИ</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Розпочніть вашу найвеличнішу <span>ПРИГОДУ</span> З НАМИ!</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+          <a href="#tours" class="btn-primary"
+            >ДЕТАЛЬНІШЕ <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+        <div class="hero-booking">
+          <h3>Знайдіть ідеальне місце для відпочинку</h3>
+          <div class="form-row">
+            <div class="input-group">
+              <label>Дата заїзду</label>
+              <input type="date" id="checkin" value="2026-06-01" />
+            </div>
+            <div class="input-group">
+              <label>Дата виїзду</label>
+              <input type="date" id="checkout" value="2026-06-08" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-group">
+              <label>Дорослі</label>
+              <select id="adult">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label>Діти</label>
+              <select id="child">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn-primary btn-block" id="findHotelsBtn">
+            ЗНАЙТИ ГОТЕЛІ
+          </button>
+          <div id="bookingMessage" class="booking-alert-msg"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-sub">Надійні з 2001 року</div>
+        <div class="section-title">Ми — Exploore</div>
+        <p class="section-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam.
+        </p>
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fas fa-globe-americas"></i>
+            <h4>Мандри світом</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-hotel"></i>
+            <h4>Найкращі готелі</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-umbrella-beach"></i>
+            <h4>Пляжні курорти</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-hiking"></i>
+            <h4>Пригодницькі тури</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-concierge-bell"></i>
+            <h4>Цілодобова підтримка</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-tag"></i>
+            <h4>Найкращі ціни</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations" class="tours-section">
+      <div class="container">
+        <div class="section-sub">Пакуй і вперед</div>
+        <div class="section-title" id="tours">Неймовірні тури</div>
+        <div class="tours-grid">
+          <div class="tour-card">
+            <div
+              class="tour-img"
+              style="
+                background-image: url(&quot;https://picsum.photos/id/104/400/250&quot;);
+              "
+            ></div>
+            <div class="tour-info">
+              <h3>Нью-Йорк + Париж</h3>
+              <div class="tour-meta">
+                <i class="far fa-calendar-alt"></i> 7 днів + 6 ночей
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="price">$600</div>
+              <button class="btn-outline book-now-btn">ЗАБРОНЮВАТИ</button>
+            </div>
+          </div>
+          <div class="tour-card">
+            <div
+              class="tour-img"
+              style="
+                background-image: url(&quot;https://picsum.photos/id/15/400/250&quot;);
+              "
+            ></div>
+            <div class="tour-info">
+              <h3>Балі + Сінгапур</h3>
+              <div class="tour-meta">
+                <i class="far fa-calendar-alt"></i> 7 днів + 6 ночей
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="price">$800</div>
+              <button class="btn-outline book-now-btn">ЗАБРОНЮВАТИ</button>
+            </div>
+          </div>
+          <div class="tour-card">
+            <div
+              class="tour-img"
+              style="
+                background-image: url(&quot;https://picsum.photos/id/29/400/250&quot;);
+              "
+            ></div>
+            <div class="tour-info">
+              <h3>Лондон + Дубай</h3>
+              <div class="tour-meta">
+                <i class="far fa-calendar-alt"></i> 7 днів + 6 ночей
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="price">$1000</div>
+              <button class="btn-outline book-now-btn">ЗАБРОНЮВАТИ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="testimonials">
+      <div class="container">
+        <div class="section-sub">Відгуки клієнтів</div>
+        <div class="section-title">Ми — туристичний агент</div>
+        <div class="carousel-container">
+          <div class="testimonial-slide" id="testimonialSlide"></div>
+          <div class="carousel-controls">
+            <button class="carousel-btn" id="prevSlide">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn" id="nextSlide">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="dot-container" id="dotContainer"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4>Розпочинайте мандри</h4>
+            <p>123, Головна вулиця, Нове місто, Моя країна 123456</p>
+            <p><i class="fas fa-phone"></i> +123 456 7890</p>
+            <p><i class="fas fa-envelope"></i> free@psdfreebies.com</p>
+          </div>
+          <div class="footer-col">
+            <h4>Швидкі посилання</h4>
+            <a href="#home">Головна</a>
+            <a href="#destinations">Напрямки</a>
+            <a href="#reviews">Відгуки</a>
+            <a href="#about">Про нас</a>
+            <a href="#contact">Контакти</a>
+          </div>
+          <div class="footer-col">
+            <h4>Розсилка</h4>
+            <p>
+              Підпишіться на ексклюзивні пропозиції та поради щодо подорожей
+            </p>
+            <div class="subscribe-form">
+              <input
+                type="email"
+                id="subEmail"
+                placeholder="Ваша електронна адреса"
+                required
+              />
+              <button type="button" id="subscribeBtn">Підписатися</button>
+            </div>
+            <div id="subMsg" class="sub-message"></div>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Дизайн від PSDFreebies.com | Всі права захищені © 2025</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .querySelectorAll(
+          '.nav-link, .footer-col a[href^="#"], .hero-content .btn-primary',
+        )
+        .forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            const href = this.getAttribute("href");
+            if (href && href.startsWith("#")) {
+              e.preventDefault();
+              const targetId = href.substring(1);
+              const targetElement = document.getElementById(targetId);
+              if (targetElement) {
+                targetElement.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+                if (window.innerWidth <= 768) {
+                  document
+                    .getElementById("navLinks")
+                    .classList.remove("active");
+                }
+              }
+            }
+          });
+        });
+
+      const burger = document.getElementById("burgerMenu");
+      const navLinksMenu = document.getElementById("navLinks");
+      burger.addEventListener("click", () =>
+        navLinksMenu.classList.toggle("active"),
+      );
+
+      const findBtn = document.getElementById("findHotelsBtn");
+      const bookingMsg = document.getElementById("bookingMessage");
+      findBtn.addEventListener("click", () => {
+        const checkin = document.getElementById("checkin").value;
+        const checkout = document.getElementById("checkout").value;
+        const adult = document.getElementById("adult").value;
+        if (!checkin || !checkout) {
+          bookingMsg.innerText = "Будь ласка, оберіть дати заїзду та виїзду.";
+          return;
+        }
+        if (new Date(checkin) >= new Date(checkout)) {
+          bookingMsg.innerText = "Дата виїзду має бути після дати заїзду.";
+          return;
+        }
+        bookingMsg.innerHTML = `✨ Шукаємо готелі для ${adult} дорослих з ${checkin} по ${checkout}. ✨`;
+        setTimeout(() => (bookingMsg.innerHTML = ""), 3000);
+      });
+
+      const subBtn = document.getElementById("subscribeBtn");
+      const subEmail = document.getElementById("subEmail");
+      const subMsg = document.getElementById("subMsg");
+      subBtn.addEventListener("click", () => {
+        const email = subEmail.value.trim();
+        const emailPattern = /^[^\s@]+@([^\s@.,]+\.)+[^\s@.,]{2,}$/;
+        if (email === "") {
+          subMsg.style.color = "#f97316";
+          subMsg.innerText = "Електронна адреса обов'язкова!";
+        } else if (!emailPattern.test(email)) {
+          subMsg.style.color = "#f97316";
+          subMsg.innerText = "Будь ласка, введіть дійсну електронну адресу.";
+        } else {
+          subMsg.style.color = "#4ade80";
+          subMsg.innerText =
+            "🎉 Ви успішно підписалися! Перевірте свою поштову скриньку.";
+          subEmail.value = "";
+          setTimeout(() => (subMsg.innerText = ""), 3500);
+        }
+      });
+
+      const testimonialsData = [
+        {
+          text: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”",
+          stars: 5,
+          name: "Іван Петренко",
+          role: "Самостійний мандрівник",
+        },
+        {
+          text: "“Неймовірний досвід із Exploore! Команда організувала все ідеально. Я почувався в безпеці й насолоджувався кожною миттю. Дуже рекомендую пакет Нью-Йорк + Париж!”",
+          stars: 5,
+          name: "Олена Коваленко",
+          role: "Мандрівниця з родиною",
+        },
+        {
+          text: "“Найкраще туристичне агентство, яким я коли-небудь користувався. Підтримка клієнтів на вищому рівні, а тури були чарівними. Обов'язково забронюю знову наступного літа!”",
+          stars: 5,
+          name: "Михайло Шевченко",
+          role: "Шукач пригод",
+        },
+      ];
+
+      let currentIndex = 0;
+      const testimonialDiv = document.getElementById("testimonialSlide");
+      const dotContainer = document.getElementById("dotContainer");
+      const prevBtn = document.getElementById("prevSlide");
+      const nextBtn = document.getElementById("nextSlide");
+
+      function renderCarousel() {
+        const item = testimonialsData[currentIndex];
+        let starHtml = "";
+        for (let i = 0; i < 5; i++) starHtml += '<i class="fas fa-star"></i>';
+        testimonialDiv.innerHTML = `<div class="testimonial-text">${item.text}</div><div class="stars">${starHtml}</div><div class="reviewer">${item.name} <span>· ${item.role}</span></div>`;
+        updateDots();
+      }
+
+      function updateDots() {
+        dotContainer.innerHTML = "";
+        testimonialsData.forEach((_, idx) => {
+          const dot = document.createElement("div");
+          dot.classList.add("dot");
+          if (idx === currentIndex) dot.classList.add("active");
+          dot.addEventListener("click", () => {
+            currentIndex = idx;
+            renderCarousel();
+          });
+          dotContainer.appendChild(dot);
+        });
+      }
+
+      prevBtn.addEventListener("click", () => {
+        currentIndex =
+          (currentIndex - 1 + testimonialsData.length) %
+          testimonialsData.length;
+        renderCarousel();
+      });
+      nextBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % testimonialsData.length;
+        renderCarousel();
+      });
+      renderCarousel();
+
+      const bookBtns = document.querySelectorAll(".book-now-btn");
+      bookBtns.forEach((btn) =>
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          alert(
+            "✨ Дякуємо! Симуляція бронювання. Наша команда звʼяжеться з вами найближчим часом. ✨",
+          );
+        }),
+      );
+    </script>
+  </body>
+</html>
